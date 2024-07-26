@@ -5,6 +5,9 @@ import "./menu.scss";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
+// components
+import RevealText from "../RevealText/RevealText";
+
 // icons
 import backHome from "../../assets/icons/backHome.png";
 
@@ -31,12 +34,20 @@ const Menu = ({ local }) => {
       <div>
         <Link className="logo" to={"/"}>
           <strong className="titleLogo">
-            <p>@felipesoarws</p>
+            <p>
+              <RevealText>@felipesoarws</RevealText>
+            </p>
           </strong>
           <div className="secondTitleLogo">
-            <p className="spanLogo">web design</p>
-            <strong>&</strong>
-            <p className="spanLogo">development</p>
+            <p className="spanLogo">
+              <RevealText>web design</RevealText>
+            </p>
+            <strong>
+              <RevealText>&</RevealText>
+            </strong>
+            <p className="spanLogo">
+              <RevealText>development</RevealText>
+            </p>
           </div>
         </Link>
       </div>
@@ -44,11 +55,13 @@ const Menu = ({ local }) => {
         <Link className="logo" to={`${local == "home" ? "/projects" : "/"}`}>
           <strong className="projectsMenu">
             <p>
-              {local == "home" ? (
-                "projetos"
-              ) : (
-                <img src={backHome} alt="backHome" className="backHomeLogo" />
-              )}
+              <RevealText>
+                {local == "home" ? (
+                  "projetos"
+                ) : (
+                  <img src={backHome} alt="backHome" className="backHomeLogo" />
+                )}
+              </RevealText>
             </p>
           </strong>
         </Link>

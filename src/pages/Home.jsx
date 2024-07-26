@@ -14,6 +14,7 @@ import Menu from "../components/Menu/Menu";
 import Stacks from "../components/Stacks/Stacks";
 import Slider from "../components/Slider/Slider";
 import ProjectItem from "../components/ProjectItem/ProjectItem";
+import RevealText from "../components/RevealText/RevealText";
 
 // icons
 import backArrow from "../assets/icons/backArrow.png";
@@ -22,69 +23,6 @@ import backArrow from "../assets/icons/backArrow.png";
 import mainBg from "../assets/mainHeader.gif";
 
 const Home = () => {
-  useEffect(() => {
-    function randomCharacter() {
-      const chars =
-        "abcdefghijklmnopqrstuvwyxzABCDEFGHIJKLMNOPQRSTUVWYXZ0123456789";
-      return chars[Math.floor(Math.random() * chars.length)];
-    }
-
-    function setInitialDataAtt(elements) {
-      elements.forEach((el) => {
-        const textContent = el.textContent.trim();
-
-        if (!el.getAttribute("data-text") && textContent) {
-          el.setAttribute("data-text", textContent);
-          el.textContent = "";
-        }
-      });
-    }
-
-    function revealNextLetter(element, index, revealedText) {
-      const originalText = element.getAttribute("data-text");
-
-      if (index < originalText.length) {
-        revealedText += originalText[index];
-        let tempText = revealedText;
-
-        for (let i = index + 1; i < originalText.length; i++) {
-          tempText += randomCharacter();
-        }
-
-        element.textContent = tempText;
-        index++;
-
-        setTimeout(() => revealNextLetter(element, index, revealedText), 50);
-      } else {
-        element.textContent = originalText;
-      }
-    }
-
-    function handleIntersection(entries, observer) {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const element = entry.target;
-          revealNextLetter(element, 0, "");
-          observer.unobserve(element); // Stop observing once the animation starts
-        }
-      });
-    }
-
-    const paragraphs = document.querySelectorAll("p");
-    const titles = document.querySelectorAll("h3");
-
-    setInitialDataAtt(paragraphs);
-    setInitialDataAtt(titles);
-
-    const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.1,
-    });
-    paragraphs.forEach((p) => observer.observe(p));
-    titles.forEach((t) => observer.observe(t));
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <div className="container">
       <header className="padding">
@@ -97,7 +35,7 @@ const Home = () => {
         <div className="aboutUs padding">
           <div>
             <h3 className="sectionTitle">
-              <strong>../sobre-mim</strong>
+              <RevealText>../sobre-mim</RevealText>
             </h3>
           </div>
           <div className="aboutUsRight">
@@ -109,14 +47,18 @@ const Home = () => {
             </div>
             <div className="limitedBorder">
               <p className="aboutUsText">
-                Meu nome é Felipe, tenho 22 anos, sou formado em Análise e
-                Desenvolvimento de Sistemas e atualmente curso Engenharia de
-                Software na Cruzeiro do Sul.
+                <RevealText>
+                  Meu nome é Felipe, tenho 22 anos, sou formado em Análise e
+                  Desenvolvimento de Sistemas e atualmente curso Engenharia de
+                  Software na Cruzeiro do Sul.
+                </RevealText>
               </p>
               <p className="aboutUsText">
-                Estou constantemente estudando as novas tecnologias da área e
-                colocando em prática com projetos para me desafiar e sempre
-                expandir meus conhecimentos.
+                <RevealText>
+                  Estou constantemente estudando as novas tecnologias da área e
+                  colocando em prática com projetos para me desafiar e sempre
+                  expandir meus conhecimentos.
+                </RevealText>
               </p>
             </div>
           </div>
@@ -124,7 +66,7 @@ const Home = () => {
         <div className="stacks padding">
           <div>
             <h3 className="sectionTitle">
-              <strong>../stacks</strong>
+              <RevealText>../stacks</RevealText>
             </h3>
           </div>
           <div className="stacksLine">
@@ -136,11 +78,19 @@ const Home = () => {
         </div>
         <div className="projects padding">
           <div className="limitedBorder">
-            <h3 className="sectionTitle">../projetos</h3>
+            <h3 className="sectionTitle">
+              <RevealText>../projetos</RevealText>
+            </h3>
 
             <div className="sectionDesc">
-              <p>Ficou curioso(a) sobre meus projetos?</p>
-              <p>Dá uma olhadinha ai abaixo o que eu ando construindo!</p>
+              <p>
+                <RevealText>Ficou curioso(a) sobre meus projetos?</RevealText>
+              </p>
+              <p>
+                <RevealText>
+                  Dá uma olhadinha ai abaixo o que eu ando construindo!
+                </RevealText>
+              </p>
             </div>
           </div>
           <ProjectItem
@@ -167,11 +117,13 @@ const Home = () => {
           />
           <div className="linkToTheProjects limitedBorder">
             <h3 className="linkToTheProjectsItem limitedBorder">
-              <strong>Para ver todos os projetos, clique no link!</strong>
+              <RevealText>
+                Para ver todos os projetos, clique no link!
+              </RevealText>
             </h3>
             <Link to={"/projects"} className="limitedBorder">
               <h3 className="gradientText linkToTheProjectsItem">
-                Todos os projetos
+                <RevealText>Todos os projetos</RevealText>
               </h3>
             </Link>
           </div>

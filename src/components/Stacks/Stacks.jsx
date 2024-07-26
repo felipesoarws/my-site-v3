@@ -1,5 +1,8 @@
 import "./stacks.scss";
 
+// components
+import RevealText from "../RevealText/RevealText";
+
 // icons - frontend
 import html from "../../assets/icons/html.png";
 import javascript from "../../assets/icons/javascript.png";
@@ -96,12 +99,16 @@ const Stacks = () => {
     <>
       {stacks.map((stack, id) => (
         <div className="stack" key={id}>
-          <h3 className="stackTitle">{stack.title}</h3>
+          <h3 className="stackTitle">
+            <RevealText>{stack.title}</RevealText>
+          </h3>
           <div className="stackItems">
             {stack.items.map((item, id) => (
               <div key={id} className="stackItemsFlex">
                 <img src={item.icon} className="stackIcon" alt="backArrow" />
-                <p className="stackDesc">{item.name}</p>
+                <p className="stackDesc">
+                  <RevealText>{item.name}</RevealText>
+                </p>
               </div>
             ))}
           </div>

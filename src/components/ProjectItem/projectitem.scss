@@ -151,7 +151,7 @@ $purpleEnd: #e8a9ff;
     align-items: flex-start;
     justify-content: space-between;
     visibility: visible;
-    gap: 2vw;
+    gap: 4vw;
 
     @media screen and (max-width: 768px) {
       display: none;
@@ -260,9 +260,12 @@ $purpleEnd: #e8a9ff;
 
       .backgroundDesktop,
       .backgroundMobile {
+        border: 1px solid rgba($color: $lightWhite, $alpha: 0.1);
         border-radius: 0.7vw;
         width: 100%;
-        height: 23vw;
+        height: 20vw;
+        object-fit: contain;
+        box-shadow: 0 12px 20px 4px rgba($color: #000000, $alpha: 0.2);
       }
     }
   }

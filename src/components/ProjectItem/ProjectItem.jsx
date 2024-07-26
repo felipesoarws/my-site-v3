@@ -2,6 +2,9 @@ import "./projectitem.scss";
 
 import Projects from "../../data/projects.json";
 
+// components
+import RevealText from "../RevealText/RevealText";
+
 // icons
 import github from "../../assets/icons/github.png";
 import arrowLink from "../../assets/icons/arrowLink.png";
@@ -14,19 +17,20 @@ const ProjectItem = ({
   builtWith,
   link,
   repository,
-  bgDesktop,
-  bgMobile,
 }) => {
-  console.log(project);
   return (
     <div className="projectsList">
       <div className="projectItemMobile">
         <div className="projectDetails">
           <h3 className="gradientText projectIdTitle">
-            {id}/{Projects.length}
+            <RevealText>
+              {id}/{Projects.length}
+            </RevealText>
           </h3>
           <h3 className="projectTitle">
-            <strong>{title}</strong>
+            <RevealText>
+              <strong>{title}</strong>
+            </RevealText>
           </h3>
           <div className="projectPreviews">
             <div>
@@ -47,12 +51,16 @@ const ProjectItem = ({
             </div>
           </div>
           <div className="projectDescription limitedBorder">
-            <p>{desc}</p>
+            <p>
+              <RevealText>{desc}</RevealText>
+            </p>
           </div>
           <div className="projectStacks">
             {builtWith.map((stacks, id) => (
               <div key={id}>
-                <p className="projectStacksItem">{stacks}</p>
+                <p className="projectStacksItem">
+                  <RevealText>{stacks}</RevealText>
+                </p>
               </div>
             ))}
           </div>
@@ -110,18 +118,24 @@ const ProjectItem = ({
       <div className="projectItemDesktop">
         <div className="projectDetails">
           <h3 className="gradientText projectIdTitle">
-            {id}/{Projects.length}
+            <RevealText>
+              {id}/{Projects.length}
+            </RevealText>
           </h3>
           <h3 className="projectTitle">
-            <strong>{title}</strong>
+            <RevealText>{title}</RevealText>
           </h3>
           <div className="projectDescription limitedBorder">
-            <p>{desc}</p>
+            <p>
+              <RevealText>{desc}</RevealText>
+            </p>
           </div>
           <div className="projectStacks">
             {builtWith.map((stacks, id) => (
               <div key={id}>
-                <p className="projectStacksItem">{stacks}</p>
+                <p className="projectStacksItem">
+                  <RevealText>{stacks}</RevealText>
+                </p>
               </div>
             ))}
           </div>

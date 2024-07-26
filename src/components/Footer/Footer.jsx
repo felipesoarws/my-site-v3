@@ -1,7 +1,8 @@
 import "../../styles/global.scss";
 import "./footer.scss";
 
-import { useEffect } from "react";
+// components
+import RevealText from "../RevealText/RevealText";
 
 // icons
 import github from "../../assets/icons/github.png";
@@ -15,28 +16,44 @@ export default function Footer() {
       <div className="rowItems">
         <div className="contactLogo">
           <div>
-            <h3 className="logoTitle">Felipe</h3>
+            <h3 className="logoTitle">
+              <RevealText>Felipe</RevealText>
+            </h3>
           </div>
           <div className="logoRow">
             <div className="gradientText bioTitle">
-              <p>Front-end</p>
-              <p>Developer</p>
+              <p>
+                <RevealText>Front-end</RevealText>
+              </p>
+              <p>
+                <RevealText>Developer</RevealText>
+              </p>
             </div>
-            <h3 className="logoTitle">Soares</h3>
+            <h3 className="logoTitle">
+              <RevealText>Soares</RevealText>
+            </h3>
           </div>
         </div>
         <div className="contact">
           <h3 className="sectionTitle">
-            <strong>../contato</strong>
+            <RevealText>../contato</RevealText>
           </h3>
           <div className="contactContainer">
             <div className="contactContainerText">
-              <p>Codificado por mim</p>
-              <strong>:)</strong>
+              <p>
+                <RevealText>Codificado por mim</RevealText>
+              </p>
+              <strong>
+                <RevealText>:)</RevealText>
+              </strong>
             </div>
             <div className="contactContainerText">
-              <p>Feito em </p>
-              <strong>2024</strong>
+              <p>
+                <RevealText>Feito em </RevealText>
+              </p>
+              <strong>
+                <RevealText>2024</RevealText>
+              </strong>
             </div>
           </div>
         </div>
@@ -49,7 +66,9 @@ export default function Footer() {
             className="item"
           >
             <img src={github} className="itemImage" alt="github" />
-            <h3 className="textItem">Github</h3>
+            <h3 className="textItem">
+              <RevealText>Github</RevealText>
+            </h3>
           </a>
 
           <a
@@ -58,7 +77,9 @@ export default function Footer() {
             className="item"
           >
             <img src={linkedin} className="itemImage" alt="linkedin" />
-            <h3 className="textItem">LinkedIn</h3>
+            <h3 className="textItem">
+              <RevealText>LinkedIn</RevealText>
+            </h3>
           </a>
 
           <a
@@ -68,7 +89,9 @@ export default function Footer() {
           >
             <img src={email} className="itemImage" alt="e-mail" />
 
-            <h3 className="textItem">E-mail</h3>
+            <h3 className="textItem">
+              <RevealText>E-mail</RevealText>
+            </h3>
           </a>
 
           <a
@@ -78,7 +101,9 @@ export default function Footer() {
           >
             <img src={instagram} className="itemImage" alt="instagram" />
 
-            <h3 className="textItem">Instagram</h3>
+            <h3 className="textItem">
+              <RevealText>Instagram</RevealText>
+            </h3>
           </a>
         </div>
       </div>
