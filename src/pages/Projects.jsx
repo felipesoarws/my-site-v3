@@ -13,6 +13,7 @@ import RevealText from "../components/RevealText/RevealText";
 
 export default function Projects() {
   useEffect(() => {
+    window.document.title = "@felipesoarws: my projects";
     window.scrollTo(0, 0);
   }, []);
 

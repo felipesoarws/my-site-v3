@@ -23,6 +23,10 @@ import backArrow from "../assets/icons/backArrow.png";
 import mainBg from "../assets/mainHeader.gif";
 
 const Home = () => {
+  useEffect(() => {
+    window.document.title = "@felipesoarws: your fav dev :)";
+  }, []);
+
   return (
     <div className="container">
       <header className="padding">

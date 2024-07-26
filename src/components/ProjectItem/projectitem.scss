@@ -6,6 +6,12 @@ $darkGray: #151515;
 $purpleStart: #b400f5;
 $purpleEnd: #e8a9ff;
 
+@font-face {
+  font-family: "NeueMontreal-Bold";
+  src: local("NeueMontreal-Bold"),
+    url("../../fonts/NeueMontreal-Bold.otf") format("otf");
+}
+
 .gradientText {
   background: -webkit-linear-gradient(45deg, $purpleStart, $purpleEnd);
   -webkit-background-clip: text;
@@ -165,11 +171,14 @@ $purpleEnd: #e8a9ff;
       flex-direction: column;
 
       .projectTitle {
-        font-size: 2.5vw;
+        font-size: 2.8vw;
+        z-index: 1000;
       }
 
       .projectIdTitle {
-        font-size: 4vw;
+        font-size: 3vw;
+        font-family: "NeueMontreal-Bold", sans-serif !important;
+        transform: translateY(1.9vw);
       }
 
       .projectDescription {
