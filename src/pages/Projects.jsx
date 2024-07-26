@@ -3,15 +3,19 @@ import "../components/ProjectItem/projectitem.scss";
 
 import ProjectsData from "../data/projects.json";
 
-// components
+import { useEffect } from "react";
 
+// components
 import Menu from "../components/Menu/Menu";
 import ProjectItem from "../components/ProjectItem/ProjectItem";
 import Footer from "../components/Footer/Footer";
 import RevealText from "../components/RevealText/RevealText";
 
 export default function Projects() {
-  console.log(ProjectsData);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="container">
       <header className="padding">
