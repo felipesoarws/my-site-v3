@@ -1,0 +1,269 @@
+// variables
+$lightWhite: #f5f5f5;
+$darkGray: #151515;
+
+// linear fonts
+$purpleStart: #b400f5;
+$purpleEnd: #e8a9ff;
+
+.gradientText {
+  background: -webkit-linear-gradient(45deg, $purpleStart, $purpleEnd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.3vw;
+  transition: all 0.3s ease-in-out;
+}
+
+.projectsList {
+  margin: 8vw 0 1vw 0;
+  display: flex;
+  align-items: space-between;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  .projectItemMobile {
+    display: none;
+    visibility: hidden;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    visibility: visible;
+    gap: 1vw;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      visibility: visible;
+    }
+
+    .projectDetails {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+
+      .projectTitle {
+        font-size: 1.8rem;
+        z-index: 1000;
+      }
+
+      .projectPreviews {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 0.7rem;
+
+        .backgroundDesktop,
+        .backgroundMobile {
+          width: 100%;
+          height: 20vh;
+          margin: 0.8rem 0 0.5rem 0;
+          border-radius: 0.4rem;
+        }
+      }
+
+      .projectIdTitle {
+        font-size: 3rem;
+        transform: translateY(1.4rem);
+      }
+
+      .projectDescription {
+        margin: 0.8vw 0;
+        width: 86vw;
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+
+      .projectStacks {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 1.5rem 0;
+
+        .projectStacksItem {
+          background-color: $darkGray;
+          color: $lightWhite;
+          border: 1px solid rgba($color: #b4b4b4, $alpha: 0.2);
+          outline: 0;
+          padding: 0.6rem 1.2rem;
+          border-radius: 35px;
+          font-weight: 100;
+          transition: all 0.3s ease-in-out;
+          font-size: 0.8rem;
+
+          &:hover {
+            background-color: $lightWhite;
+            color: $darkGray;
+          }
+        }
+      }
+
+      .projectLinks {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0.5rem 0;
+
+        .projectLinksIcons {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          border: 1px solid $lightWhite;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+        }
+
+        .projectLinksGitHub {
+          background: $darkGray;
+
+          &:hover {
+            background: #202020;
+          }
+        }
+
+        .projectLinksDeploy {
+          background: $lightWhite;
+          transform: translateX(-0.2rem);
+
+          .projectLinksImage {
+            transform: translateY(0);
+            transition: all 0.3s ease-in-out;
+            width: 20px;
+            height: 20px;
+          }
+
+          &:hover .projectLinksImage {
+            transform: translate(0.3rem, -0.3rem);
+          }
+        }
+      }
+    }
+  }
+
+  .projectItemDesktop {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    visibility: visible;
+    gap: 2vw;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+      visibility: hidden;
+    }
+
+    .projectDetails {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+
+      .projectTitle {
+        font-size: 2.5vw;
+      }
+
+      .projectIdTitle {
+        font-size: 4vw;
+      }
+
+      .projectDescription {
+        width: 30vw;
+        margin: 0.8vw 0;
+
+        p {
+          font-size: 1.1vw;
+          display: block;
+        }
+      }
+
+      .projectStacks {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.5vw;
+        margin: 1.5vw 0;
+
+        .projectStacksItem {
+          background-color: $darkGray;
+          color: $lightWhite;
+          border: 1px solid rgba($color: #b4b4b4, $alpha: 0.2);
+          outline: 0;
+          padding: 0.6vw 1.2vw;
+          border-radius: 35px;
+          font-weight: 100;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            background-color: $lightWhite;
+            color: $darkGray;
+          }
+        }
+      }
+
+      .projectLinks {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0.5vw 0;
+
+        .transform {
+          transform: translateX(1.2vw);
+        }
+
+        .projectLinksIcons {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          border: 1px solid $lightWhite;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+        }
+
+        .projectLinksGitHub {
+          background: $darkGray;
+
+          &:hover {
+            background: #202020;
+          }
+        }
+
+        .projectLinksDeploy {
+          background: $lightWhite;
+          transform: translateX(-1.2vw);
+
+          .projectLinksImage {
+            transform: translateY(0);
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover .projectLinksImage {
+            transform: translate(0.3vw, -0.3vw);
+          }
+        }
+      }
+    }
+
+    .projectPreviews {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 2vw;
+
+      .backgroundDesktop,
+      .backgroundMobile {
+        border-radius: 0.7vw;
+        width: 100%;
+        height: 23vw;
+      }
+    }
+  }
+}

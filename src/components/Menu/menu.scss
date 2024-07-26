@@ -1,0 +1,106 @@
+// variables
+$lightWhite: #f5f5f5;
+$darkGray: #151515;
+
+// linear fonts
+$purpleStart: #b400f5;
+$purpleEnd: #e8a9ff;
+
+.menuBarScrolled {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: $darkGray;
+  padding: 1.2vw 2vw;
+  border-radius: 1vw;
+  z-index: 1200;
+  border-radius: 2vw;
+
+  @media screen and (max-width: 768px) {
+    padding: 0.7rem 1rem;
+    border-radius: 1rem;
+    border-radius: 2rem;
+  }
+}
+
+// nav
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  top: 3vw;
+  right: 6vw;
+  left: 6vw;
+
+  @media screen and (max-width: 768px) {
+    top: 2rem;
+    right: 2rem;
+    left: 2rem;
+  }
+
+  .logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    line-height: 0.9;
+
+    .titleLogo {
+      color: $lightWhite;
+      font-size: 1.6vw;
+
+      @media screen and (max-width: 768px) {
+        font-size: 0.8rem;
+      }
+    }
+    .backHomeLogo {
+      width: 25px;
+      height: 25px;
+      transition: all 0.3s ease-in-out;
+      display: block;
+
+      &:hover {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .secondTitleLogo {
+      display: flex;
+      transform: translateX(0.3vw);
+      gap: 0.2vw;
+
+      strong {
+        font-size: 0.9vw;
+        color: $lightWhite;
+      }
+
+      .spanLogo {
+        color: $lightWhite;
+        font-size: 0.9vw;
+        font-weight: 100;
+        transition: all 0.3s ease-in-out;
+
+        @media screen and (max-width: 768px) {
+          font-size: 0.46rem;
+        }
+      }
+    }
+  }
+
+  .projectsMenu {
+    font-size: 1.4vw;
+    color: $lightWhite;
+    transition: all 0.3s ease-in-out;
+
+    @media screen and (max-width: 768px) {
+      font-size: 0.9rem;
+    }
+
+    &:hover {
+      color: rgba($color: $lightWhite, $alpha: 0.7);
+    }
+  }
+}

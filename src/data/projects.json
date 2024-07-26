@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "builtYear": "2022",
+    "projectName": "ToDo",
+    "builtWith": ["HTML", "JavaScript", "sCSS"],
+    "projectDesc": "Um projeto de criar tafefas, com opção de selecionar as ja feitas e apagar as selecionadas.",
+    "mobileBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/todoapp_screen_desk.jpg",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/todoapp_screen_desk.jpg",
+    "repository": "",
+    "projectLink": "https://to-do-app-blue.vercel.app/"
+  },
+  {
+    "id": 2,
+    "builtYear": "2022",
+    "projectName": "God of War: Ragnarök",
+    "builtWith": ["ReactJS", "sCSS"],
+    "projectDesc": "Landing Page criada baseada no God of War: Ragnarök, com elaboração de carrossel de galeria e com descrições sobre os principais personagens da saga atual.",
+    "mobileBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/gow_screen_desk.jpg",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/gow_screen_desk.jpg",
+    "repository": "https://github.com/felipesoarws/god-of-war-ragnarok-landing-page",
+    "projectLink": "https://god-of-war-ragnarok-landing-page.vercel.app"
+  },
+  {
+    "id": 3,
+    "builtYear": "2023",
+    "projectName": "Google Keep - Clone",
+    "builtWith": ["ReactJS", "sCSS"],
+    "projectDesc": "Clone do Google Keep, com funcionalidades de criar tarefas, alternar layout de visualização e marcas taferas ja feitas.",
+    "mobileBackground": "https://raw.githubusercontent.jcom/felipesoarws/v2/main/src/assets/google_keep_screen_desk.jpg",
+    "desktopBackground": "https://raw.githubusercontent.jcom/felipesoarws/v2/main/src/assets/google_keep_screen_desk.jpg",
+    "repository": "https://github.com/felipesoarws/google-keep-clone",
+    "projectLink": "https://google-keep-clone-dev.vercel.app"
+  },
+  {
+    "id": 4,
+    "builtYear": "2022",
+    "projectName": "Valorant Hub",
+    "builtWith": ["ReactJS", "sCSS", "API"],
+    "projectDesc": "Um website do jogo Valorant, onde pode consultar os agentes do jogo e suas caracteristicas, como também ranks e mapas do jogo, além de suas armas e suas skins.",
+    "mobileBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/vlrhub_screen_desk.jpg",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/vlrhub_screen_desk.jpg",
+    "repository": "https://github.com/felipesoarws/valorant-hub",
+    "projectLink": "https://vlrgg.vercel.app"
+  },
+  {
+    "id": 5,
+    "builtYear": "2023",
+    "projectName": "German Audio",
+    "builtWith": ["goDaddy", "HTML", "sCSS"],
+    "projectDesc": "Criação e costumização da página da German Áudio, utilizando ferramentas do goDaddy e também scripts próprios de HTML e sCSS para layout mais alinhado com a ideia do cliente.",
+    "mobileBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/german_screen_desk.jpg",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/german_screen_desk.jpg",
+    "repository": "",
+    "projectLink": "https://germanaudio.com.br/"
+  },
+  {
+    "id": 6,
+    "builtYear": "2023",
+    "projectName": "FeWe Studio",
+    "builtWith": ["ReactJS", "sCSS"],
+    "projectDesc": "Landing Page criada para um studio com propósito de vender serviços de desenvolvimento web.",
+    "mobileBackground": "https://raw.githubusercontent.com/felipesoarws/v3/main/public/assets/icons/projects/fewe_mobile.png?token=GHSAT0AAAAAACSWCSL4MTXI3P2MZN2TNX2IZVBIWWA",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v3/main/public/assets/icons/projects/fewe_desktop.png?token=GHSAT0AAAAAACSWCSL4S2A6JXJJOQZMENEKZVBIVTQ",
+    "repository": "https://github.com/felipesoarws/FeWeStudio",
+    "projectLink": "https://fewe.vercel.app"
+  },
+  {
+    "id": 7,
+    "builtYear": "2024",
+    "projectName": "Simulador do Brasileirão",
+    "builtWith": ["ReactJS", "sCSS"],
+    "projectDesc": "Projeto criado baseado no simulador de resultados do campeonato brasileiro do Globo Esporte.",
+    "mobileBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/brasileirao_simulador_screen_desk.jpg",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/brasileirao_simulador_screen_desk.jpg",
+    "repository": "https://github.com/felipesoarws/brasileirao-simulador-2024",
+    "projectLink": "https://brasileirao-simulador.vercel.app/"
+  }
+]

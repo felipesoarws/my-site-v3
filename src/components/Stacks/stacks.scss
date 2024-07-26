@@ -1,0 +1,61 @@
+.stacks {
+  .stacksLine {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5vw;
+    margin: 2.5vw 0;
+
+    @media screen and (max-width: 768px) {
+      gap: 2rem;
+      margin: 1.5rem 0;
+    }
+
+    .stackItems {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7vw;
+      margin-top: 1.5vw;
+
+      @media screen and (max-width: 768px) {
+        gap: 0.6rem;
+        margin-top: 0.7rem;
+        width: 33vw;
+      }
+    }
+
+    .stackTitle {
+      font-size: 1.5vw;
+      font-weight: 400;
+
+      @media screen and (max-width: 768px) {
+        font-size: 0.8rem;
+      }
+    }
+
+    .stackItemsFlex {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0.6vw;
+
+      @media screen and (max-width: 768px) {
+        gap: 0.4rem;
+      }
+    }
+    .stackIcon {
+      object-fit: cover;
+      width: 27px;
+      height: 27px;
+    }
+    .stackDesc {
+      font-weight: 100;
+      font-size: 1.2vw;
+
+      @media screen and (max-width: 768px) {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

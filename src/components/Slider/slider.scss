@@ -1,0 +1,56 @@
+// slider
+.sliderContainer {
+  overflow: hidden;
+}
+
+// slide
+.slideContainer {
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+}
+
+// phrase
+
+.phraseContainer {
+  display: flex;
+  padding: 0 20px;
+  gap: 2rem;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    gap: 1rem;
+  }
+
+  .phraseContainerText {
+    font-size: 6vw;
+
+    @media screen and (max-width: 768px) {
+      font-size: 3rem;
+    }
+  }
+
+  .phraseContainerSpan {
+    position: relative;
+    height: 5.5vw;
+    width: 14.5vw;
+    overflow: hidden;
+    border-radius: 8vw;
+
+    @media screen and (max-width: 768px) {
+      height: 3rem;
+      width: 7rem;
+      border-radius: 6rem;
+    }
+
+    img {
+      height: 5.5vw;
+      width: 14.5vw;
+
+      @media screen and (max-width: 768px) {
+        height: 3rem;
+        width: 7rem;
+      }
+    }
+  }
+}
