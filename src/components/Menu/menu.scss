@@ -8,7 +8,7 @@ $purpleEnd: #e8a9ff;
 
 .menuBarScrolled {
   position: fixed !important;
-  top: 0;
+  top: 1vw;
   right: 0;
   left: 0;
   background-color: $darkGray;
@@ -34,6 +34,10 @@ $purpleEnd: #e8a9ff;
   top: 3vw;
   right: 6vw;
   left: 6vw;
+
+  &.menuBarScrolled {
+    top: 1vw;
+  }
 
   @media screen and (max-width: 768px) {
     top: 2rem;
