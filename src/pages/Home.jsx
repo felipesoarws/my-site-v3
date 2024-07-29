@@ -98,26 +98,26 @@ const Home = () => {
             </div>
           </div>
           <ProjectItem
-            project={Data[0]}
-            id={Data[0].id}
-            title={Data[0].projectName}
-            desc={Data[0].projectDesc}
-            builtWith={Data[0].builtWith}
-            link={Data[0].projectLink}
-            repository={Data[0].repository}
-            desktopBackground={Data[0].desktopBackground}
-            mobileBackground={Data[0].mobileBackground}
+            project={Data[3]}
+            id={Data[3].id}
+            title={Data[3].projectName}
+            desc={Data[3].projectDesc}
+            builtWith={Data[3].builtWith}
+            link={Data[3].projectLink}
+            repository={Data[3].repository}
+            desktopBackground={Data[3].desktopBackground}
+            mobileBackground={Data[3].mobileBackground}
           />
           <ProjectItem
-            project={Data[1]}
-            id={Data[1].id}
-            title={Data[1].projectName}
-            desc={Data[1].projectDesc}
-            builtWith={Data[1].builtWith}
-            link={Data[1].projectLink}
-            repository={Data[1].repository}
-            desktopBackground={Data[1].desktopBackground}
-            mobileBackground={Data[1].mobileBackground}
+            project={Data[6]}
+            id={Data[6].id}
+            title={Data[6].projectName}
+            desc={Data[6].projectDesc}
+            builtWith={Data[6].builtWith}
+            link={Data[6].projectLink}
+            repository={Data[6].repository}
+            desktopBackground={Data[6].desktopBackground}
+            mobileBackground={Data[6].mobileBackground}
           />
           <div className="linkToTheProjects limitedBorder">
             <h3 className="linkToTheProjectsItem limitedBorder">
