@@ -99,7 +99,7 @@ const Home = () => {
           </div>
           <ProjectItem
             project={Data[3]}
-            id={Data[3].id}
+            id={Data[0].id}
             title={Data[3].projectName}
             desc={Data[3].projectDesc}
             builtWith={Data[3].builtWith}
@@ -110,7 +110,7 @@ const Home = () => {
           />
           <ProjectItem
             project={Data[6]}
-            id={Data[6].id}
+            id={Data[1].id}
             title={Data[6].projectName}
             desc={Data[6].projectDesc}
             builtWith={Data[6].builtWith}

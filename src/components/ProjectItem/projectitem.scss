@@ -173,12 +173,13 @@ $purpleEnd: #e8a9ff;
       .projectTitle {
         font-size: 2.8vw;
         z-index: 1000;
+        line-height: 0.8;
       }
 
       .projectIdTitle {
         font-size: 3vw;
         font-family: "NeueMontreal-Bold", sans-serif !important;
-        transform: translateY(1.9vw);
+        transform: translateY(1.2vw);
       }
 
       .projectDescription {
