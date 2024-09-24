@@ -75,5 +75,16 @@
     "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v3/main/src/assets/projects/simulador_brasileirao_desktop.png",
     "repository": "https://github.com/felipesoarws/brasileirao-simulador-2024",
     "projectLink": "https://brasileirao-simulador.vercel.app/"
+  },
+  {
+    "id": 8,
+    "builtYear": "2024",
+    "projectName": "Dunder Mifflin",
+    "builtWith": ["ReactJS", "TailwindCSS"],
+    "projectDesc": "Landing Page da empresa Dunder Mifflin da série The Office.",
+    "mobileBackground": "https://raw.githubusercontent.com/felipesoarws/v3/main/src/assets/projects/simulador_brasileirao_mobile.png",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v3/main/src/assets/projects/simulador_brasileirao_desktop.png",
+    "repository": "https://thedundermifflin.vercel.app/",
+    "projectLink": "https://github.com/felipesoarws/dunder-mifflin-company"
   }
 ]
