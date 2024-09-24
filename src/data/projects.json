@@ -82,8 +82,8 @@
     "projectName": "Dunder Mifflin",
     "builtWith": ["ReactJS", "TailwindCSS"],
     "projectDesc": "Landing Page da empresa Dunder Mifflin da série The Office.",
-    "mobileBackground": "https://raw.githubusercontent.com/felipesoarws/v3/main/src/assets/projects/simulador_brasileirao_mobile.png",
-    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v3/main/src/assets/projects/simulador_brasileirao_desktop.png",
+    "mobileBackground": "https://raw.githubusercontent.com/felipesoarws/v3/refs/heads/main/src/assets/projects/dundermifflin_mobile.png",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v3/refs/heads/main/src/assets/projects/dundermifflin_desktop.png",
     "repository": "https://github.com/felipesoarws/dunder-mifflin-company",
     "projectLink": "https://thedundermifflin.vercel.app/"
   }
