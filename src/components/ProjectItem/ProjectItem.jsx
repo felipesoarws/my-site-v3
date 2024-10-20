@@ -22,11 +22,9 @@ const ProjectItem = ({
     <div className="projectsList">
       <div className="projectItemMobile">
         <div className="projectDetails">
-          <h3 className="gradientText projectIdTitle">
-            <RevealText>
-              {id}/{Projects.length}
-            </RevealText>
-          </h3>
+          <h2 className="gradientText projectIdTitle">
+            {id}/{Projects.length}
+          </h2>
           <h3 className="projectTitle">
             <RevealText>
               <strong>{title}</strong>

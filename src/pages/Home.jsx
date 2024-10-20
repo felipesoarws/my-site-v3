@@ -98,15 +98,15 @@ const Home = () => {
             </div>
           </div>
           <ProjectItem
-            project={Data[3]}
+            project={Data[8]}
             id={Data[0].id}
-            title={Data[3].projectName}
-            desc={Data[3].projectDesc}
-            builtWith={Data[3].builtWith}
-            link={Data[3].projectLink}
-            repository={Data[3].repository}
-            desktopBackground={Data[3].desktopBackground}
-            mobileBackground={Data[3].mobileBackground}
+            title={Data[8].projectName}
+            desc={Data[8].projectDesc}
+            builtWith={Data[8].builtWith}
+            link={Data[8].projectLink}
+            repository={Data[8].repository}
+            desktopBackground={Data[8].desktopBackground}
+            mobileBackground={Data[8].mobileBackground}
           />
           <ProjectItem
             project={Data[6]}

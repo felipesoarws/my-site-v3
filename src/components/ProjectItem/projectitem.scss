@@ -50,6 +50,8 @@ $purpleEnd: #e8a9ff;
       .projectTitle {
         font-size: 1.8rem;
         z-index: 1000;
+        overflow: hidden;
+        max-width: 90vw;
       }
 
       .projectPreviews {
@@ -70,6 +72,7 @@ $purpleEnd: #e8a9ff;
       .projectIdTitle {
         font-size: 3rem;
         transform: translateY(1.4rem);
+        font-family: "Montserrat", sans-serif;
       }
 
       .projectDescription {
@@ -174,11 +177,16 @@ $purpleEnd: #e8a9ff;
         font-size: 2.8vw;
         z-index: 1000;
         line-height: 0.8;
+
+        @media (min-width: 1024px) {
+          overflow: hidden;
+          max-width: 30vw;
+        }
       }
 
       .projectIdTitle {
         font-size: 3vw;
-        font-family: "NeueMontreal-Bold", sans-serif !important;
+        font-family: "Montserrat", sans-serif;
         transform: translateY(1.2vw);
       }
 
