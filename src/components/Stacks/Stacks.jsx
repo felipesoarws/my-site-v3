@@ -39,10 +39,10 @@ const stacks = [
         name: "ReactJS",
         icon: reactjs,
       },
-      {
+      /*  {
         name: "NextJS",
         icon: nextjs,
-      },
+      }, */
     ],
   },
   {

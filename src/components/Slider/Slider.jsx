@@ -56,7 +56,7 @@ const Slide = ({ src, left, progress, direction }) => {
 const Phrase = ({ src }) => {
   return (
     <div className="phraseContainer">
-      <strong className="phraseContainerText">front end developer</strong>
+      <strong className="phraseContainerText">software engineer</strong>
       <span className="phraseContainerSpan">
         <img style={{ objectFit: "cover" }} src={src} alt="image" />
       </span>
