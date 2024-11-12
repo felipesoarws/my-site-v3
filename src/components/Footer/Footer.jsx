@@ -39,22 +39,21 @@ export default function Footer() {
             <RevealText>../contato</RevealText>
           </h3>
           <div className="contactContainer">
-            <div className="contactContainerText">
-              <p>
-                <RevealText>Codificado por mim</RevealText>
-              </p>
-              <strong>
-                <RevealText>:)</RevealText>
-              </strong>
-            </div>
-            <div className="contactContainerText">
-              <p>
-                <RevealText>Feito em </RevealText>
-              </p>
-              <strong>
-                <RevealText>2024</RevealText>
-              </strong>
-            </div>
+            <a
+              href="https://wa.me/5511978002480?text=Ol%C3%A1,%20tudo%20bem?%20"
+              target="_blank"
+            >
+              <div className="contactContainerText">
+                <p>
+                  <RevealText>
+                    Me mande mensagem no WhatsApp! <strong>:)</strong>
+                  </RevealText>
+                </p>
+              </div>
+              <div className="contactContainerText">
+                <strong>(11) 9 7800-2480</strong>
+              </div>
+            </a>
           </div>
         </div>
       </div>
