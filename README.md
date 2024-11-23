@@ -1,5 +1,5 @@
 
-# Portifólio (v3)
+# Portifólio
 
 Portifólio criado para apresentar meus projetos e habilidades e realizações de forma organizada e visualmente atraente.
 
